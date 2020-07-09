@@ -120,8 +120,10 @@ span{
 #banner{
     display: grid;
     grid-template-areas:
-    "bannerS1 bannerS1 bannerS2";
-    grid-column-gap: 10px;
+    "bannerS1 bannerS2 bannerS2";
+    grid-column-gap: 100px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
 }
 .bannerS1{
@@ -129,9 +131,31 @@ span{
 }
 .bannerS2{
     grid-area: bannerS2;
+    background-image: url(images/code.png);
+    background-size: cover;
+    min-width: 400px;
+    min-height: 200px;
+    background-size: 100% 100%;
 }
 
-
+.welcomemessage{
+    margin-bottom: 0;
+    margin-top:0;
+    color: var(--white);
+}
+.aboutme{
+    margin-top: 0px;
+}
+@media(max-width: 1068px){
+    .container{
+        width: 95%;
+    }
+    #banner{
+        grid-template-areas:
+        "bannerS1"
+        "bannerS2";
+    }
+}
 
 
 
@@ -140,6 +164,7 @@ span{
 .footer{
     background:var(--backgroundPrimary);
     color: white;
+    
   }
   .footerhr{
     margin-bottom:10px;
