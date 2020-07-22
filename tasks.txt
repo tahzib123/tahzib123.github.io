@@ -1,0 +1,2 @@
+fix work showcase title on mobile
+fix font size for skills/lang title

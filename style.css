@@ -13,6 +13,14 @@ html{
     --white: #FFF;
     --black: #000;
     --darkGray: #C0C0C0;
+    --react: #3498db;
+    --node: #27ae60;
+    --html: #e74c3c;
+    --cpp: #34495e;
+    --ejs: #e74c3c;
+    --mysql: #e67e22;
+    --css: #9b59b6;
+    --javascript: #f1c40f;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -256,6 +264,7 @@ canvas {
 }
 .projectstitle{
   color: var(--white);
+  text-decoration: underline;
 }
 
 .projectname{
@@ -283,8 +292,9 @@ canvas {
   float: left;
   padding: 2px 8px 2px 8px;
   margin-right: 5px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: var(--black);
+  color: var(--black);
 }
 .projectlinks{
   display: block;
@@ -318,13 +328,83 @@ canvas {
 
   #projects{
     margin-top: 550px;
+    text-align: center;
+  }
+  .projectlanguages{
+    text-align: center;
+  }
+  .listItems{
+    text-align: center;
   }
 
 }
 
+/* End Projects start skills section */
+#skills{
+  width:100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 2em;
+  grid-row-gap: 4em;
+}
+.skillsgrid{
+  display: grid;
+  grid-template-areas: 
+  "skillsS1 skillsS2 skillsS2";
+  border: 1px solid var(--hrColor);
+  padding: 20px;
+  border-radius: 10px;
+}
+.skillsS1{
+  grid-area: skillsS1;
+  width:100px;
+  padding-right: 10px;
+  
+}
+.skillsS2{
+  padding-left: 20px;
+  grid-area: skillsS2;
+}
+.skillstitle{
+  color: var(--white);
+  font-size: 26px;
+  text-decoration: underline;
+}
+.skillName{
+  margin:0;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 400;
+}
+.skilldesc{
+  font-size: 14px;
+  margin: 0;
+  padding:0;
+}
 
+@media(max-width: 1268px){
+  #skills{
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+  .skillsgrid{
+    width: 80%;
+    margin: auto;
+  }
 
-
+}
+@media(max-width: 768px){
+  #skills{
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 0%;
+  }
+  .skillstitle{
+    text-align: center;
+  }
+}
+/* End skills section */
 
 
 
@@ -335,7 +415,7 @@ canvas {
 .footer{
     background:var(--backgroundPrimary);
     color: white;
-    
+    margin-top: 5%;
   }
   .footerhr{
     margin-bottom:10px;
@@ -394,4 +474,59 @@ canvas {
       padding-bottom:2%;
     }
   
+  }
+
+
+
+  /* color classes */
+
+  .html{
+    background-color: var(--html);
+  }
+  .node{
+    background-color: var(--node);
+  }
+  .ejs{
+    background-color: var(--ejs);
+  }
+  .mysql{
+    background-color: var(--mysql);
+  }
+  .react{
+    background-color: var(--react);
+  }
+  .cpp{
+    background-color: var(--cpp);
+  }
+  .css{
+    background-color: var(--css);
+  }
+  .javascript{
+    background-color: var(--javascript);
+  }
+
+
+  .htmlB{
+    border-right: 2px solid var(--html);
+  }
+  .nodeB{
+    border-right: 2px solid var(--node);
+  }
+  .ejsB{
+    border-right: 2px solid var(--ejs);
+  }
+  .mysqlB{
+    border-right: 2px solid var(--mysql);
+  }
+  .reactB{
+    border-right: 2px solid var(--react);
+  }
+  .cppB{
+    border-right: 2px solid var(--cpp);
+  }
+  .cssB{
+    border-right: 2px solid var(--css);
+  }
+  .javascriptB{
+    border-right: 2px solid var(--javascript);
   }
