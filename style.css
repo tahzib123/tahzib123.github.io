@@ -164,7 +164,7 @@ span{
 
 }
 .bannerS1{
-    width: 80%;
+    width: 70%;
     margin: auto;
     grid-area: bannerS1;
     color: var(--white);
@@ -229,6 +229,7 @@ canvas {
     .bannerS1{
       padding-bottom: 5%;
       width: 95%;
+      
     }
     .bannerS2{
         
@@ -329,7 +330,7 @@ canvas {
 @media(max-width: 768px){
 
   #projects{
-    margin-top: 550px;
+    margin-top: 75vh;
     
   }
 
