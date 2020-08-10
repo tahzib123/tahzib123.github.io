@@ -20,6 +20,9 @@ html{
     --ejs: #e74c3c;
     --mysql: #e67e22;
     --css: #9b59b6;
+    --gatsby: #663399;
+    --graphql: #e00096;
+    --contentful: #ffd85f;
     --javascript: #f1c40f;
     width: 100%;
     height: 100%;
@@ -52,13 +55,10 @@ body{
 .navcontainer{
     position: absolute;
     top: 0px;
-    
     width:80%;
     margin: auto;
     padding-top:10px;
-    
-
-    
+      
 }
 
 .profile{
@@ -293,6 +293,7 @@ canvas {
   padding: 2px 8px 2px 8px;
   margin-right: 5px;
   font-size: 16px;
+  font-weight: 500;
   background-color: var(--black);
   color: var(--black);
 }
@@ -322,17 +323,16 @@ canvas {
   #projects{
     margin-top: 550px;
   }
+
 }
 
 @media(max-width: 768px){
 
   #projects{
     margin-top: 550px;
-    text-align: center;
+    
   }
-  .projectlanguages{
-    text-align: center;
-  }
+
   .listItems{
     text-align: center;
   }
@@ -400,9 +400,7 @@ canvas {
     grid-template-columns: repeat(1,1fr);
     margin-left: 0%;
   }
-  .skillstitle{
-    text-align: center;
-  }
+
 }
 /* End skills section */
 
@@ -412,7 +410,7 @@ canvas {
 
 /* Start Footer */
 
-.footer{
+  .footer{
     background:var(--backgroundPrimary);
     color: white;
     margin-top: 5%;
@@ -439,9 +437,8 @@ canvas {
     width:30%;
   }
   .links{
-    width:50%;
-    margin-left:25%;
-    margin-right:25%;
+    width:90%;
+    margin: auto;
     text-align: center;
     padding:10px;
   }
@@ -460,7 +457,7 @@ canvas {
     color:var(--paragraphColor);
   }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     .footermessage{
       padding-top:2%;
       padding-bottom:1%;
@@ -472,6 +469,9 @@ canvas {
     .copyright{
       padding-top:1%;
       padding-bottom:2%;
+    }
+    .links{
+      width: 100%;
     }
   
   }
@@ -504,7 +504,15 @@ canvas {
   .javascript{
     background-color: var(--javascript);
   }
-
+  .gatsby{
+    background-color: var(--gatsby);
+  }
+  .contentful{
+    background-color: var(--contentful);
+  }
+  .graphql{
+    background-color: var(--graphql);
+  }
 
   .htmlB{
     border-right: 2px solid var(--html);
