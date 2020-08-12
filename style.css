@@ -32,6 +32,10 @@ body{
     margin:0;
     padding: 0;
 }
+.pageWrapper{
+  display:inline;
+  overflow-x: hidden;
+}
 .wrapper {
   background: url("https://wallpapercave.com/wp/SIkIzca.jpg");
   color: #eee;
@@ -154,29 +158,24 @@ span{
     margin: auto;
 }
 #banner{
-    display: grid;
-    grid-template-areas:
-    "bannerS1 bannerS2 bannerS2";
 
-    grid-column-gap: 100px;
-    margin-top: 5%;
-    margin-bottom: 5%;
 
 }
 .bannerS1{
     width: 70%;
     margin: auto;
-    grid-area: bannerS1;
+    
     color: var(--white);
     position: absolute;
     top: 100px;
-    bottom: 0;
+    
+    
 }
 canvas {
   position:absolute;
   left:0;
   top: 0;
-  height: 600px;
+  height: 50vh;
   
 }
 .bannerS2{
