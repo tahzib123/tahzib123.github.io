@@ -37,14 +37,20 @@ html, body {
   overflow-x:hidden;
 }
 
-.wrapper {
-  background: url("https://wallpapercave.com/wp/SIkIzca.jpg");
-  color: #eee;
-
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-  animation: animation 100s linear infinite;
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 75vh;
+  width: 100%;
 }
+#banner{
+  height: 75vh;
+}
+.canvascontainer{
+  display: "block";
+}
+
 
 
 
@@ -69,11 +75,10 @@ html, body {
 .profile{
     float: left;
     background-image: url(/images/profilepic.jpg);
-
     border-radius: 50%;
     background-size: cover;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .profile img{
     display:block;
@@ -167,13 +172,6 @@ span{
     top: 100px;  
 }
 
-canvas {
-  position:absolute;
-  left:0;
-  top: 0;
-  height: 50vh;
-  
-}
 .bannerS2{
     grid-area: bannerS2;
 }
@@ -238,7 +236,7 @@ canvas {
 
 /* Start Projects section */
 #projects{
-  margin-top: 550px;
+  
 }
 .projectgrid{
   display: grid;
@@ -316,18 +314,11 @@ canvas {
     "projectgridS1"
     "projectgridS2";
   }
-  #projects{
-    margin-top: 550px;
-  }
+
 
 }
 
 @media(max-width: 768px){
-
-  #projects{
-    margin-top: 75vh;
-    
-  }
 
   .listItems{
     text-align: center;
