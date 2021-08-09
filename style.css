@@ -74,7 +74,7 @@ canvas {
 
 .profile{
     float: left;
-    background-image: url(/images/profilepic.jpg);
+    background-image: url('/images/profilepic.jpg');
     border-radius: 50%;
     background-size: cover;
     width: 40px;
@@ -85,8 +85,6 @@ canvas {
 }
 .description {
 
-    padding-left: 45px;
-    
 }
 
 .name{
@@ -394,6 +392,73 @@ span{
 
 
 
+/* Start Experience Section */
+
+#experience{
+  margin-top:20%;
+}
+.job{
+  margin-top: 20px;;
+  padding: 10px;
+  border-left: 2px solid white;
+}
+.companyName{
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+.jobTitle{
+  font-size:0.8rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+.school{
+  margin-top: 20px;
+  padding: 10px;
+  border-left: 2px solid white;
+}
+.workexperiencetitle{
+  font-weight:500;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #27ae60;
+  display: inline;
+  margin-bottom: 100px;
+}
+.educationtitle{
+  font-weight:500;
+  font-size: 0.8rem;
+  display: inline;
+  text-align: left;
+  color: #70A2EC;
+}
+.flexcontainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media(max-width: 768px){
+  .flexcontainer{
+    display: block;
+    text-align: center;
+  }
+  .school{
+    border-left:none;
+  }
+  .job{
+    border-left:none;
+  }
+
+}
+/* End experience section */
+
+
+
 
 /* Start Footer */
 
@@ -524,4 +589,8 @@ span{
   }
   .javascriptB{
     border-right: 2px solid var(--javascript);
+  }
+
+  .python{
+    
   }
