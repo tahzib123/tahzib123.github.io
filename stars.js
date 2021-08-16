@@ -83,7 +83,7 @@ bgCtx.fillRect(0, 0, width, height);
 
 // stars
 function Star(options) {
-    this.size = Math.random() * 2;
+    this.size = Math.random() * 1;
     this.speed = Math.random() * .05;
     this.x = options.x;
     this.y = options.y;
@@ -153,9 +153,10 @@ for (var i = 0; i < height; i++) {
 // Add 2 shooting stars that just cycle.
 entities.push(new ShootingStar());
 entities.push(new ShootingStar());
-entities.push(new Terrain({mHeight : (height/2)-120}));
-entities.push(new Terrain({displacement : 120, scrollDelay : 50, fillStyle : "rgb(17,20,40)", mHeight : (height/2)-60}));
-entities.push(new Terrain({displacement : 100, scrollDelay : 20, fillStyle : "#101010", mHeight : height/2}));
+entities.push(new ShootingStar());
+entities.push(new Terrain({displacement : 100, scrollDelay : 20, mHeight : height/1.5}));
+entities.push(new Terrain({displacement : 100, scrollDelay : 50, fillStyle : "rgb(17,20,40)", mHeight : (height/1.5)-50}));
+entities.push(new Terrain({displacement : 100, scrollDelay : 20, fillStyle : "#101010", mHeight : height/1.5}));
 
 //animate background
 function animate() {

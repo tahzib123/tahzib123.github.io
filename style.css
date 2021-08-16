@@ -151,6 +151,9 @@ span{
     #projects{
       font-size: 15px;
     }
+    .navigation{
+      display: none;
+    }
 }
 /* end of navigation */
 
@@ -229,9 +232,11 @@ span{
 }
 
 
-
-
-
+@media(max-width: 768px){
+  .projectstitle, .skillstitle, .workexperiencetitle{
+    text-align: center;
+  }
+}
 /* Start Projects section */
 #projects{
   
