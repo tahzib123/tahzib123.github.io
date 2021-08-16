@@ -143,7 +143,7 @@ ShootingStar.prototype.update = function () {
 var entities = [];
 
 // init the stars
-for (var i = 0; i < height; i++) {
+for (var i = 0; i < height * 2; i++) {
     entities.push(new Star({
         x: Math.random() * width,
         y: Math.random() * height
