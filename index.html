@@ -1,314 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tahzib Sunesara Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
-        
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    </head>
-
-    <body>
-            
-        
-            
-            <hr class = "navhr">
-            <canvas id="bgCanvas"></canvas>
-
-            <script src="stars.js"></script>
-                <div class="container">
-                    
-                        <nav class= "navcontainer">
-                            
-                            <div class="description">
-                                <h5 class="name">Tahzib Sunesara</h3>
-                                <ul class="navigation">
-                                    <li class="navlinks"><a href = "#banner">About</a></li>
-                                    <span> / </span>
-                                    <li class="navlinks"><a href = "#projects">Projects</a></li>
-                                    <span> / </span>
-                                    <li class="navlinks"><a href = "#skills">Skills</a></li>
-                                    <span> / </span>
-                                    <li class="navlinks"><a href = "#experience">Experience</a></li>
-                                    <span> / </span>
-                                </ul>
-                                <h6 class="role">Software Developer</h4>
-                            </div>
-            
-                        </nav>
-                    
-
-                        <section id="banner">
-                            <div class = "bannerS1">
-                                <h1>Hi,</h1>
-                                <p class="aboutme">
-                                    I am recent Computer Science Grad from The University Of Houston.
-                                    <br>
-                                    <br>
-                                    For the past 4 years I have been learning software and web development. During this time I have been building all kinds of apps using technologies like React, Gatsby, NodeJS, Django, and many more.
-                                    Some of these projects have been made for clients or companies which has allowed me to understand how to work with others to deliver a good experience for everyone involved.
-                                    <br>
-                                    <br>
-                                    Below you will find an overview of my projects and some links if you want to explore them further.
-                                </p>
-                                <button class="ghbutton"><a target="_blank" href="https://github.com/tahzib123">Github</a></button>
-                                <button class="resumebutton"><a target="_blank" href="Resume(2020-2021).pdf">Resume</a></button>
-                            </div>
-
-                            
-
-                        </section>
-                    
-
-                        <section id="projects">
-                            <h1 class="projectstitle">Work Showcase</h1>
-                            <div class="projectgrid">
-                                <div class="projectgridS1">
-                                    <video autoplay loop muted playsinline>
-                                        <source src="images/zooproject.mp4" type="video/webm">
-                                    </video>
-                                </div>
-
-                                <div class="projectgridS2">
-                                    <h2 class="projectname">zoo-administration-app</h2>
-                                    <h5 class="projectyear">2020</h5>
-                                    <ul class="projectlanguages">
-                                        <li class="listItems ejs">EJS</li>
-                                        <li class="listItems node">Node</li>
-                                        <li class="listItems mysql">MySQL</li>
-                                    </ul>
-                                    <div class="projectlinks">
-                                        <a target="_blank" href="https://github.com/migsbeast/ZooDB" class="projectlink">Github</a>
-                                       
-                                    </div> 
-
-                                    <p class="projectdescription">
-                                        A Group Project for my Database Design course simulating what running a zoo would be like.
-                                        <br>
-                                        <br> 
-                                        Full Stack web app that has a customer website for purchasing products/tickets and an admin portal where employees can perform actions like add new animals, update animal information, update food and medicine stock, view data reports and more. Each role has their own actions that they can perform.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="projectgrid">
-                                <div class="projectgridS1">
-                                    <video autoplay loop muted playsinline>
-                                        <source src="images/g4gvideo.mp4" type="video/webm">
-                                    </video>
-                                </div>
-
-                                <div class="projectgridS2">
-                                    <h2 class="projectname">gatsby-gift-finder</h2>
-                                    <h5 class="projectyear">2020</h5>
-                                    <ul class="projectlanguages">
-                                        <li target="_blank" class="listItems react">React</li>
-                                        <li target="_blank" class="listItems gatsby">Gatsby</li>
-                                        <li target="_blank" class="listItems graphql">GraphQL</li>
-                                        <li target="_blank" class="listItems contentful">Contentful</li>
-                                    </ul>
-                                    <div class="projectlinks">
-                                        <a target="_blank" href="https://vigilant-ritchie-2d2c54.netlify.app/" class="projectlink">Demo</a>
-                                        <a target="_blank" href="https://github.com/tahzib123/GatsbySite" class="projectlink">Github</a>
-                                    </div> 
-
-                                    <p class="projectdescription">
-                                        Site that helps you find gifts for special occasions. 
-                                        <br>    
-                                        The data for the site is sourced from Contentful CMS and queried using GraphQL. Using Contentful's simple web interface
-                                        anyone can add new products to the site. 
-                                        <br>
-                                        <br>
-                                        Many performance considerations have been made such as prefetching all required data and lazy-loading it into the DOM.
-                                        The site is also optimized for 
-                                        SEO and works as a Progressive Web App so it can function offline.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="projectgrid">
-                                <div class="projectgridS1">
-                                    <video autoplay loop muted playsinline>
-                                        <source src="images/nbagif.mp4" type="video/webm">
-                                    </video>
-                                </div>
-
-                                <div class="projectgridS2">
-                                    <h2 class="projectname">react-nba-app</h2>
-                                    <h5 class="projectyear">2019</h5>
-                                    <ul class="projectlanguages">
-                                        <li target="_blank" class="listItems react">React</li>
-                                        <li target="_blank" class="listItems css">CSS</li>
-                                    </ul>
-                                    <div class="projectlinks">
-                                        <a target="_blank" href="https://github.com/tahzib123/Nba" class="projectlink">Github</a>
-                                        <a target="_blank" href="https://affectionate-sinoussi-fbfed5.netlify.app/" class="projectlink">Demo</a>
-                                    </div> 
-
-                                    <p class="projectdescription">
-                                        A web app that allows you to search for any NBA player and shows their stats in the form of season averages and game by game performances.
-                                        <br>    
-                                        The site uses a free NBA API to get the information for each player.
-                                        <br>
-                                        <br> 
-                                        The demo will take around 30s to load due to the free hosting plan.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="projectgrid">
-                                <div class="projectgridS1">
-                                    <video autoplay loop muted playsinline>
-                                        <source src="images/photositegif.mp4" type="video/webm">
-                                    </video>
-                                </div>
-
-                                <div class="projectgridS2">
-                                    <h2 class="projectname">photography-site</h2>
-                                    <h5 class="projectyear">2019</h5>
-                                    <ul class="projectlanguages">
-                                        <li class="listItems html">HTML</li>
-                                        <li class="listItems css">CSS</li>
-                                        <li class="listItems javascript">Javascript</li>
-                                    </ul>
-                                    <div class="projectlinks">
-                                        <a target="_blank" href="https://tahzib123.github.io/PhotographySite/" class="projectlink">Demo</a>
-                                        <a target="_blank" href="https://github.com/tahzib123/Photography-Site" class="projectlink">Github</a>
-                                    </div> 
-
-                                    <p class="projectdescription">
-                                        An online portfolio for a photography company including a slideshow, about section, contact section and an image gallery.
-                                        <br>
-                                        <br> 
-                                        This Project uses a CSS Grid layout and is responsive on web, mobile, and tablet devices.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        <h1 class = "skillstitle">Skills/Languages</h1>
-                        <section id="skills">
-                            
-                            <div class="skillsgrid">
-                                <div class="skillsS1 reactB">
-                                    <i class="fab fa-react fa-5x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">React</h2>
-                                    <p class="skilldesc">Gatsby, Context API, React Router, axios, styled components, PWA</p>    
-                                </div>       
-                            </div>
-                            <div class="skillsgrid">
-                                <div class="skillsS1 javascriptB">
-                                    <i class="fab fa-js-square fa-5x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">Javascript</h2>
-                                    <p class="skilldesc">ES6, DOM Manipulation, async/await, Fetch API, p5.js</p>    
-                                </div>       
-                            </div>
-                            <div class="skillsgrid">
-                                <div class="skillsS1 cppB">
-                                    <i class="fab fa-cuttlefish fa-5x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">C++</h2>
-                                    <p class="skilldesc">Data Structures, STL, Multithreading, Sockets, OOP</p>    
-                                </div>       
-                            </div>
-                            <div class="skillsgrid">
-                                <div class="skillsS1 htmlB">
-                                    <i class="fab fa-html5 fa-5x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">Web Design</h2>
-                                    <p class="skilldesc">HTML/CSS, Responsive web design, CSS Grid, Flexbox, Material UI, Bootstrap, TailwindCSS, Content Management Systems, Figma, SEO</p>    
-                                </div>       
-                            </div>
-                            <div class="skillsgrid">
-                                <div class="skillsS1  nodeB">
-                                    <i class="fab fa-node-js fa-5x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">Node/Express</h2>
-                                    <p class="skilldesc">Creating REST API's, DB integration, authentication </p>    
-                                </div>       
-                            </div>
-                            <div class="skillsgrid">
-                                <div class="skillsS1 mysqlB">
-                                    <i class="fas fa-database fa-5x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">Databases</h2>
-                                    <p class="skilldesc">mySQL, SQLite, MongoDB, ER Diagrams, ORM's</p>    
-                                </div>       
-                            </div>
-                            <div class="skillsgrid">
-                                <div class="skillsS1 javascriptB">
-                                    <i class="fab fa-python fa-5x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">Python</h2>
-                                    <p class="skilldesc">Django, General Scripting, functional programming, </p>    
-                                </div>           
-                            </div>
-                            <div class="skillsgrid">
-                                <div class="skillsS1 reactB">
-                                    <i class="fas fa-cloud fa-4x"></i>
-                                </div>
-                                <div class="skillsS2">
-                                    <h2 class="skillName">Cloud</h2>
-                                    <p class="skilldesc">AWS EC2, RDS, S3, Google Cloud Functions, Netlify</p>    
-                                </div>      
-                            </div>
-  
-                        </section> 
-
-
-                        <section id = "experience">
-                            <h1 class = "skillstitle">Experience & Education</h1>
-                            <div class = "flexcontainer">
-                                <div class = "jobs">
-                                    <i class="fas fa-briefcase"></i>
-                                    <h1 class = "workexperiencetitle">Work Experience</h1>
-                                
-                                    <div class = "job">
-                                        <img src = "images/CANlogo.jpg" width = "400" height = "200">
-                                        <h1 class = "companyName">CAN Behavioral Health</h1>
-                                        <h3 class = "jobTitle">Software Engineering Intern</h3>
-                                        <h3 class = "jobTitle">(June 2021 - Aug 2021)</h3>
-                                    </div>
-                                </div>
-                                <div class = "education">
-                                    <i class="fas fa-graduation-cap"></i>
-                                    <h1 class = "educationtitle">Education</h1>
-                                    <div class = "school">
-                                        <img src = "images/uhlogo.png" width = "400" height = "200">
-                                        <h1 class = "companyName">University of Houston</h1>
-                                        <h3 class = "jobTitle">Bachelor's in Computer Science</h3>
-                                        <h3 class = "jobTitle">(Aug 2017 - May 2021)</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    
-                </div>
-
-            <section class = "footer">
-                <div class = "footericons">
-                <a target = "_blank" href ="https://github.com/tahzib123"><i class="fab fa-github-square fa-2x GH"></i></a>
-                <a target = "_blank" href = "https://www.linkedin.com/in/tahzib-sunesara-709899166/"><i class="fab fa-linkedin fa-2x LI"></i></a>
-                
-                </div>
-                <div class = "links">
-                    <a target = "_blank" href = "#banner" class = "footerlinks">About </a>
-                    <a target = "_blank" href = "#projects" class = "footerlinks">Projects </a>
-                    <a target = "_blank" href = "#skills" class = "footerlinks">Skills </a>
-                    <a target = "_blank" href = "Resume(2020-2021).pdf" class = "footerlinks">Resume</a>
-                </div>
-            
-            </section>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahzib Sunesara Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <hr class = "navhr">
+    <canvas id="bgCanvas"></canvas>
+
+    <script src="stars.js"></script>
+        <div class="container">
+                <nav class= "navcontainer">
+                    <div class="description">
+                        <h5 class="name">Tahzib Sunesara</h3>
+                        <ul class="navigation">
+                            <li class="navlinks"><a href = "#projects">Projects</a></li>
+                            <span> / </span>
+                            <li class="navlinks"><a href = "#skills">Skills</a></li>
+                            <span> / </span>
+                            <li class="navlinks"><a href = "#experience">Experience</a></li>
+                            <span> / </span>
+                            <li class="navlinks"><a href = "#contact">Contact</a></li>
+                            <span> / </span>
+                        </ul>
+                        <h6 class="role">Software Developer</h4>
+                    </div>
+                </nav>
+
+                <section id="banner">
+                    <div class = "bannerS1">
+                        <h1>Hi,</h1>
+                        <p class="aboutme">
+                            I am a software engineer with 3 years of experience building web applications.
+                            <br>
+                            <br>
+                            I specialize in building seamless, user-centered digital experiences focused on accessibility, performance and responsiveness. 
+                            <br>
+                            <br>
+                            Below you will find an overview of my software development journey. If you have any additional questions or would like to chat further, feel free to reach me at any time.
+                        </p>
+                        <button class="ghbutton"><a target="_blank" href="https://github.com/tahzib123">Github</a></button>
+                        <button class="resumebutton"><a target="_blank" href="Resume(2020-2021).pdf">Resume</a></button>
+                    </div>
+                </section>
+            
+                <section id="projects">
+                    <h1 class="projectstitle">Work Showcase</h1>
+                    <div class="projectgrid">
+                        <div class="projectgridS1">
+                            <video autoplay loop muted playsinline>
+                                <source src="images/zooproject.mp4" type="video/webm">
+                            </video>
+                        </div>
+
+                        <div class="projectgridS2">
+                            <h2 class="projectname">zoo-administration-app</h2>
+                            <h5 class="projectyear">2020</h5>
+                            <ul class="projectlanguages">
+                                <li class="listItems ejs">EJS</li>
+                                <li class="listItems node">Node</li>
+                                <li class="listItems mysql">MySQL</li>
+                            </ul>
+                            <div class="projectlinks">
+                                <a target="_blank" href="https://github.com/migsbeast/ZooDB" class="projectlink">Github</a>
+                            </div> 
+                            <p class="projectdescription">
+                                A Group Project for my Database Design course simulating what running a zoo would be like.
+                                <br>
+                                <br> 
+                                Full Stack web app that has a customer website for purchasing products/tickets and an admin portal where employees can perform actions like add new animals, update animal information, update food and medicine stock, view data reports and more. Each role has their own actions that they can perform.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projectgrid">
+                        <div class="projectgridS1">
+                            <video autoplay loop muted playsinline>
+                                <source src="images/aichatbot.mp4" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="projectgridS2">
+                            <h2 class="projectname">ai-chatbot</h2>
+                            <h5 class="projectyear">2024</h5>
+                            <ul class="projectlanguages">
+                                <li class="listItems react">React</li>
+                                <li class="listItems node">NextJS</li>
+                                <li class="listItems mysql">MySQL</li>
+                                <li class="listItems contentful">Langchain</li>
+                            </ul>
+                            <div class="projectlinks">
+                                <a target="_blank" href="https://github.com/Tahzib1/langchain" class="projectlink">Github</a>
+                                <a target="_blank" href="https://langchain-7zuwxtqgj-tahzibs-projects.vercel.app" class="projectlink">Demo</a>
+                            </div> 
+                            <p class="projectdescription">
+                                App that allows you to chat with a sample movie database. You can ask the AI what tables are in the database, what films exist and much more. The AI response will also include the SQL command used to generate the response.
+                                <br>
+                                <br> 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projectgrid">
+                        <div class="projectgridS1">
+                            <video autoplay loop muted playsinline>
+                                <source src="images/g4gvideo.mp4" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="projectgridS2">
+                            <h2 class="projectname">gatsby-gift-finder</h2>
+                            <h5 class="projectyear">2020</h5>
+                            <ul class="projectlanguages">
+                                <li target="_blank" class="listItems react">React</li>
+                                <li target="_blank" class="listItems gatsby">Gatsby</li>
+                                <li target="_blank" class="listItems graphql">GraphQL</li>
+                                <li target="_blank" class="listItems contentful">Contentful</li>
+                            </ul>
+                            <div class="projectlinks">
+                                <a target="_blank" href="https://vigilant-ritchie-2d2c54.netlify.app/" class="projectlink">Demo</a>
+                                <a target="_blank" href="https://github.com/tahzib123/GatsbySite" class="projectlink">Github</a>
+                            </div> 
+                            <p class="projectdescription">
+                                Site that helps you find gifts for special occasions. 
+                                <br>    
+                                The data for the site is sourced from Contentful CMS and queried using GraphQL. Using Contentful's simple web interface
+                                anyone can add new products to the site. 
+                                <br>
+                                <br>
+                                Many performance considerations have been made such as prefetching all required data and lazy-loading it into the DOM.
+                                The site is also optimized for 
+                                SEO and works as a Progressive Web App so it can function offline.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projectgrid">
+                        <div class="projectgridS1">
+                            <video autoplay loop muted playsinline>
+                                <source src="images/photositegif.mp4" type="video/webm">
+                            </video>
+                        </div>
+                        <div class="projectgridS2">
+                            <h2 class="projectname">photography-site</h2>
+                            <h5 class="projectyear">2019</h5>
+                            <ul class="projectlanguages">
+                                <li class="listItems html">HTML</li>
+                                <li class="listItems css">CSS</li>
+                                <li class="listItems javascript">Javascript</li>
+                            </ul>
+                            <div class="projectlinks">
+                                <a target="_blank" href="https://tahzib123.github.io/PhotographySite/" class="projectlink">Demo</a>
+                                <a target="_blank" href="https://github.com/tahzib123/Photography-Site" class="projectlink">Github</a>
+                            </div> 
+                            <p class="projectdescription">
+                                An online portfolio for a photography company including a slideshow, about section, contact section and an image gallery.
+                                <br>
+                                <br> 
+                                This Project uses a CSS Grid layout and is responsive on web, mobile, and tablet devices.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <h1 class = "skillstitle">Skills/Languages</h1>
+                <section id="skills">
+                    <div class="skillsgrid">
+                        <div class="skillsS1 reactB">
+                            <i class="fab fa-react fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">React</h2>
+                            <p class="skilldesc">NextJS, Gatsby, Redux, Hooks, React Router, styled components</p>    
+                        </div>       
+                    </div>
+                    <div class="skillsgrid">
+                        <div class="skillsS1 htmlB">
+                            <i class="fab fa-angular fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">Angular</h2>
+                            <p class="skilldesc">Angular Material, RXJS, NGRX, Dependency Injection, Services</p>    
+                        </div>       
+                    </div>
+                    <div class="skillsgrid">
+                        <div class="skillsS1 javascriptB">
+                            <i class="fab fa-js-square fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">Typescript & Javascript</h2>
+                            <p class="skilldesc">OOP, DOM Manipulation, ES6, ES7, ES8, Browser APIs </p>    
+                        </div>       
+                    </div>
+                    <div class="skillsgrid">
+                        <div class="skillsS1 htmlB">
+                            <i class="fab fa-html5 fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">Web Design</h2>
+                            <p class="skilldesc">HTML/CSS, Responsive web design, CSS Grid, Flexbox, Material UI, Bootstrap, TailwindCSS, Content Management Systems, Figma, SEO</p>    
+                        </div>       
+                    </div>
+                    <div class="skillsgrid">
+                        <div class="skillsS1  nodeB">
+                            <i class="fab fa-node-js fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">Node/Express</h2>
+                            <p class="skilldesc">REST API's,authentication, middleware, polling </p>    
+                        </div>       
+                    </div>
+                    <div class="skillsgrid">
+                        <div class="skillsS1 mysqlB">
+                            <i class="fas fa-database fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">Databases</h2>
+                            <p class="skilldesc">mySQL, SQLite, MongoDB, database design, 1NF, 2NF, 3NF, scaling</p>    
+                        </div>       
+                    </div>
+                    <div class="skillsgrid">
+                        <div class="skillsS1 javascriptB">
+                            <i class="fab fa-python fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">Python</h2>
+                            <p class="skilldesc">Django, scripting, functional programming, data structures</p>    
+                        </div>           
+                    </div>
+                    <div class="skillsgrid">
+                        <div class="skillsS1 reactB">
+                            <i class="fas fa-cloud fa-4x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">Cloud</h2>
+                            <p class="skilldesc">AWS EC2, RDS, S3, Google Cloud Functions, Netlify</p>    
+                        </div>      
+                    </div>
+
+                    <div class="skillsgrid">
+                        <div class="skillsS1 cppB">
+                            <i class="fab fa-cuttlefish fa-5x"></i>
+                        </div>
+                        <div class="skillsS2">
+                            <h2 class="skillName">C++</h2>
+                            <p class="skilldesc">Data Structures, STL, Multithreading, Sockets, OOP</p>    
+                        </div>       
+                    </div>
+                </section> 
+                
+                <section id = "experience">
+                    <h1 class = "skillstitle">Experience & Education</h1>
+                    <div class = "flexcontainer">
+                        <div class = "jobs">
+                            <i class="fas fa-briefcase"></i>
+                            <h1 class = "workexperiencetitle">Work Experience</h1>
+                            <div class="job">
+                                <div class="image" id="credera-logo"></div>
+                                <h1 class = "companyName">Credera</h1>
+                                <h3 class = "jobTitle">Senior Front-End Engineer</h3>
+                                <h3 class = "jobTitle">(Nov 2021 - Present)</h3>
+                            </div>
+                            <div class = "job">
+                                <div class="image" id="can-logo"></div>
+                                <h1 class = "companyName">CAN Behavioral Health</h1>
+                                <h3 class = "jobTitle">Software Engineering Intern</h3>
+                                <h3 class = "jobTitle">(June 2021 - Aug 2021)</h3>
+                            </div>
+                        </div>
+                        <div class = "education">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h1 class = "educationtitle">Education</h1>
+                            <div class = "school">
+                                <div class="image" id="uh-logo"></div>
+                                <h1 class = "companyName">University of Houston</h1>
+                                <h3 class = "jobTitle">Bachelor's in Computer Science</h3>
+                                <h3 class = "jobTitle">(Aug 2017 - May 2021)</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="contact">
+                    <h1 class = "skillstitle">Contact</h1>
+                    <p> <i class="fas fa-solid fa-envelope"></i> <a href="mailto:tahzibsunesara1@gmail.com">tahzibsunesara1@gmail.com</a></p>
+                    <p><i class="fas fa-solid fa-phone"></i> <a href="tel:+18329644551">832-964-4551</a></p>
+                </section>
+            
+        </div>
+
+        <section class = "footer">
+            <div class = "footericons">
+            <a target = "_blank" href ="https://github.com/tahzib123"><i class="fab fa-github-square fa-2x GH"></i></a>
+            <a target = "_blank" href = "https://www.linkedin.com/in/tahzib-sunesara-709899166/"><i class="fab fa-linkedin fa-2x LI"></i></a>
+            
+            </div>
+            <div class = "links">
+                <a target = "_blank" href = "#banner" class = "footerlinks">About </a>
+                <a target = "_blank" href = "#projects" class = "footerlinks">Projects </a>
+                <a target = "_blank" href = "#skills" class = "footerlinks">Skills </a>
+                <a target = "_blank" href = "Resume(2020-2021).pdf" class = "footerlinks">Resume</a>
+            </div>
+        
+        </section>
+</body>
 </html>
