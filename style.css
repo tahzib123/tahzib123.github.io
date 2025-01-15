@@ -180,14 +180,23 @@ span {
 }
 .ghbutton {
   padding: 10px 20px 10px 20px;
-  background-color: var(--lightBlue);
+  background-color: var(--linkColor);
   border: none;
   font-family: inherit;
   margin-right: 10px;
+  cursor: pointer;
 }
 .ghbutton a {
   color: var(--black);
   font-size: 18px;
+}
+.ghbutton:hover,
+.resumebutton:hover {
+  background-color: white;
+
+  a {
+    color: var(--linkColor);
+  }
 }
 
 .resumebutton {
@@ -195,6 +204,7 @@ span {
   background-color: var(--paragraphColor);
   border: none;
   font-family: inherit;
+  cursor: pointer;
 }
 .resumebutton a {
   color: var(--black);
@@ -240,10 +250,11 @@ span {
 }
 .projectgridS1 {
   grid-area: projectgridS1;
-  max-width: 100%;
+  width: 100%;
 }
 .projectgridS1 video {
   max-width: 100%;
+  width: 100%;
 }
 .projectgridS2 {
   grid-area: projectgridS2;
@@ -293,6 +304,9 @@ span {
   padding-right: 15px;
   padding-left: 0px;
 }
+.projectlink:hover {
+  color: white;
+}
 
 @media (max-width: 1268px) {
   .projectgrid {
@@ -324,6 +338,9 @@ span {
   border: 1px solid var(--hrColor);
   padding: 20px;
   border-radius: 10px;
+}
+.skillsgrid:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .skillsS1 {
   grid-area: skillsS1;
@@ -382,6 +399,10 @@ span {
   padding: 20px;
   border-radius: 10px;
   min-width: 400px;
+  height: 300px;
+}
+.job:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .job > .image,
 .school > .image {
@@ -390,15 +411,16 @@ span {
   margin: auto;
   height: 200px;
   min-height: 200px;
+  margin-bottom: 10px;
 }
 #credera-logo {
-  background: url("/images/credera.png");
+  background: url("images/credera.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 #can-logo {
-  background: url("/images/CANlogo.jpg");
+  background: url("images/CANlogo.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -430,6 +452,10 @@ span {
   border-radius: 10px;
   text-align: center;
   min-width: 400px;
+  height: 300px;
+}
+.school:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .workexperiencetitle {
   font-weight: 500;
@@ -522,6 +548,9 @@ span {
   font-size: 14px;
   padding-left: 10px;
   padding-right: 10px;
+}
+.footerlinks:hover {
+  color: white;
 }
 .LI {
   color: var(--paragraphColor);
