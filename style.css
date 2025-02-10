@@ -513,6 +513,7 @@ span {
   background: var(--backgroundPrimary);
   color: white;
   margin-top: 5%;
+  margin-bottom: 24px;
 }
 .footerhr {
   margin-bottom: 10px;
