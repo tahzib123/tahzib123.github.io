@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             playsInline
             className="object-cover w-full h-[300px]"
           >
-            <source src={videoSrc} type="video/webm" />
+            <source src={videoSrc} type="video/mp4" />
           </video>
         ) : (
           <img

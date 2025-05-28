@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section id="experience" className=" my-24 px-8 m-auto max-w-[1440px]">
+    <section id="experience" className=" my-24 px-4 m-auto max-w-[1440px]">
       <div className="max-w-[1440px] m-auto ">
         <h3 className="text-3xl leading-[150%] my-12 border-b-2 border-accent w-fit">
           Experience

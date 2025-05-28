@@ -3,14 +3,18 @@ import { motion } from "motion/react";
 export default function Navbar() {
   return (
     <motion.nav
-      className="navbar bg-base-100  rounded-xl  max-w-[1440px] m-auto shadow-xl"
+      className="navbar bg-base-100 z-10 rounded-xl  max-w-[1440px] m-auto shadow-xl"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ ease: "easeIn", duration: 0.5 }}
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden pr-0"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -46,7 +50,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Tahzib Sunesara</a>
+        <a className="btn btn-ghost md:text-xl">Tahzib Sunesara</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -66,7 +70,7 @@ export default function Navbar() {
       </div>
       <div className="navbar-end pr-2 space-x-4">
         <a
-          className="btn btn-accent rounded-xl"
+          className="btn btn-accent rounded-xl btn-sm md:btn-md"
           target="_blank"
           href="Resume (2025).pdf"
         >

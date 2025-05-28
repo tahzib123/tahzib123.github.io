@@ -50,7 +50,7 @@ function App() {
           >
             <BackgroundBeams />
             <div
-              className={`top-[0px] z-10 h-8 w-full sticky bg-base-200 ${
+              className={`top-[0px] z-10 h-11 w-full sticky bg-base-200  ${
                 atTop ? "hidden" : ""
               }`}
               aria-hidden={true}

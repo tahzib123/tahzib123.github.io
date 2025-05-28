@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <section id="header" className="max-w-[1440px] m-auto px-8 py-12 pt-24">
+    <section id="header" className="max-w-[1440px] m-auto px-4 py-12 pt-24">
       <h1 className="text-3xl mb-4">Hi 👋</h1>
       <p className="text-xl">
         I'm a Software Engineer with 3+ years of professional experience
