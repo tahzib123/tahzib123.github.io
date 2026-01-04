@@ -7,7 +7,7 @@ export default function Projects() {
       <h3 className="text-3xl leading-[150%] my-12 border-b-2 border-accent w-fit">
         Projects
       </h3>
-      <div className="xl:flex flex-wrap justify-between gap-16 w-full space-y-16 xl:space-y-0">
+      <div className="lg:flex flex-wrap justify-between gap-16 w-full space-y-16 xl:space-y-0">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

@@ -9,7 +9,7 @@ export default function Skills() {
           <div className="min-w-2 h-2 rounded-[50%] bg-cyan-300"></div>
           <div>
             <h3 className="card-title">React</h3>
-            <span>NextJS, Gatsby, TailwindCSS, React Query, Redux</span>
+            <span>NextJS, Redux, TailwindCSS, React Query, Zustand</span>
           </div>
         </div>
         <div className="rounded-[1rem] bg-base-100 px-6 py-4 flex gap-4 items-center  justify-start md:justify-between w-full md:w-auto group hover:bg-base-300 transition-all duration-150">
@@ -39,15 +39,8 @@ export default function Skills() {
         <div className="rounded-[1rem] bg-base-100 px-6 py-4 flex gap-4 items-center justify-start md:justify-between w-full md:w-auto group hover:bg-base-300 transition-all duration-150">
           <div className="min-w-2 h-2 rounded-[50%] bg-emerald-500"></div>
           <div>
-            <h3 className="card-title">Python</h3>
-            <span>Django, REST Framework, Numpy</span>
-          </div>
-        </div>
-        <div className="rounded-[1rem] bg-base-100 px-6 py-4 flex gap-4 items-center justify-start md:justify-between w-full md:w-auto group hover:bg-base-300 transition-all duration-150">
-          <div className="min-w-2 h-2 rounded-[50%] bg-purple-300"></div>
-          <div>
-            <h3 className="card-title">NodeJS/ExpressJS</h3>
-            <span>REST API's, Authentication, Middleware</span>
+            <h3 className="card-title">Backend</h3>
+            <span>Django, NodeJS, ExpressJS, Hono</span>
           </div>
         </div>
         <div className="rounded-[1rem] bg-base-100 px-6 py-4 flex gap-4 items-center justify-start md:justify-between w-full md:w-auto group hover:bg-base-300 transition-all duration-150">
@@ -61,7 +54,7 @@ export default function Skills() {
           <div className="min-w-2 h-2 rounded-[50%] bg-pink-300"></div>
           <div>
             <h3 className="card-title">Cloud</h3>
-            <span>EC2, API Gateway, Lambda, Docker, RDS, S3</span>
+            <span>AWS, EC2, API Gateway, Lambda, RDS, S3, Docker</span>
           </div>
         </div>
       </div>

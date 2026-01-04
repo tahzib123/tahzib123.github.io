@@ -1,25 +1,25 @@
 export default function Header() {
   return (
-    <section id="header" className="max-w-[1440px] m-auto px-4 py-12 pt-24">
+    <section id="header" className="max-w-[1440px] m-auto px-4 py-12 pt-36 ">
       <h1 className="text-3xl mb-4">Hi 👋</h1>
       <p className="text-xl">
-        I'm a Software Engineer with 3+ years of professional experience
+        I'm a Software Engineer with 4 years of professional experience creating
+        web applications.
         <br />
         <br />
-        I specialize in crafting high-performance web applications that deliver
-        seamless, intuitive user experiences. My expertise lies in building
-        accessible, fast, and user-friendly digital products using technologies
-        like React, TypeScript, Angular, and Python.
+        I specialize in crafting web apps that deliver seamless, intuitive user
+        experiences that are always accessible, fast, and fun to use. The
+        primary technologies I use are React, TypeScript, Python, and AWS.
         <br />
         <br />
         If you have any additional questions or would like to chat further, feel
-        free to reach me using any of the links below
+        free to reach me using any of the methods below
       </p>
       <div className="mt-8 flex gap-2">
         <a
           href="https://www.linkedin.com/in/tahzib-sunesara-709899166"
           target="_blank"
-          className="hover:shadow-[0_10px_50px_rgba(8,_112,_184,_0.4)]"
+          className="p-2 bg-base-100 rounded-xl hover:bg-base-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function Header() {
         <a
           href="https://github.com/tahzib123"
           target="_blank"
-          className="hover:shadow-[0_10px_50px_rgba(8,_112,_184,_0.4)]"
+          className="p-2 bg-base-100 rounded-2xl hover:bg-base-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function Header() {
 
         <a
           href="mailto:tahzibsunesara1@gmail.com"
-          className="flex gap-1 items-center"
+          className="flex gap-1 items-center p-2 px-4 bg-base-100 rounded-2xl hover:bg-base-300"
         >
           <span className="text-sm text-base-content">
             tahzibsunesara1@gmail.com

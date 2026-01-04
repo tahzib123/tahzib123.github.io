@@ -97,8 +97,8 @@ export default function Experience() {
                 treatment plans for patients.
                 <br></br>
                 <br></br>
-                Utilized React, Material Components, and Django to build the
-                application
+                The application was built from the ground-up using react,
+                Material UI, Django and AWS.
               </p>
             </div>
             <hr className="bg-green-200" />
@@ -146,7 +146,28 @@ export default function Experience() {
                 designers and backend developers.
                 <br />
                 <br />
-                The Primary technologies I utilized at Credera were React,
+                Created a Gen AI Content Authoring Platform from the ground up
+                using React, Ant Design, and CKEditor. The application decreased
+                the time needed to draft legal and safety documents by providing
+                AI content generation and other useful features such as an
+                embedded PDF viewer, AI Chatbot, and Real-time collaboration.
+                <br />
+                <br />
+                Rebuilt a legacy insurance shopping platform from .NET to
+                Angular. The app allowed users to shop for insurance plans and
+                create proposals to compare the different plans. The new app was
+                delivered a much simpler user experience, faster performance,
+                and was backwards compatible with the legacy app.
+                <br />
+                <br />
+                Built out a React application from scratch to process customer
+                refunds for a major airline. Created custom UI components for
+                the application and documented them with Storybook. Conducted
+                design workshops to gather feedback from client stakeholders and
+                users of the old application.
+                <br />
+                <br />
+                The primary technologies I utilized at Credera were React,
                 Angular, HTML/CSS, AEM, AWS, and Typescript
               </p>
             </div>

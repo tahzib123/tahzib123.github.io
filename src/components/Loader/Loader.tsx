@@ -1,41 +1,23 @@
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
+import Lottie from "lottie-react";
+import welcomeAnimation from "../../lottie/Welcome.json";
 
 export const Loader = () => {
-  const dotVariants = {
-    pulse: {
-      scale: [1, 1.5, 1],
-      transition: {
-        duration: 1.2,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    },
+  const options = {
+    animationData: welcomeAnimation,
+    loop: false,
   };
 
   return (
-    <motion.div
-      className="absolute top-0 left-0 w-screen h-screen flex justify-center items-center bg-base-100"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
+    <AnimatePresence mode="wait">
       <motion.div
-        animate="pulse"
-        transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
-        className="flex items-center justify-center gap-4"
+        className="fixed inset-0 flex justify-center items-center bg-base-100 z-50"
+        initial={{ opacity: 0.5 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
       >
-        <motion.div
-          className="w-[20px] h-[20px] bg-info will-change-transform rounded-[50%]"
-          variants={dotVariants}
-        />
-        <motion.div
-          className="w-[20px] h-[20px] bg-info will-change-transform rounded-[50%]"
-          variants={dotVariants}
-        />
-        <motion.div
-          className="w-[20px] h-[20px] bg-info will-change-transform rounded-[50%]"
-          variants={dotVariants}
-        />
+        <Lottie {...options} />
       </motion.div>
-    </motion.div>
+    </AnimatePresence>
   );
 };

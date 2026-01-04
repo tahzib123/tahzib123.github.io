@@ -12,6 +12,7 @@ import { AnimatePresence, motion } from "motion/react";
 function App() {
   const [atTop, setAtTop] = useState(true);
   const [showLoader, setShowLoader] = useState(true);
+  const loadingAnimationSpeedMS = 4000;
 
   useEffect(() => {
     let ticking = false;
@@ -35,40 +36,45 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setShowLoader(false);
-    }, 2000);
+    }, loadingAnimationSpeedMS);
   }, []);
 
   return (
     <Fragment>
       <AnimatePresence>{showLoader && <Loader />}</AnimatePresence>
-      <AnimatePresence>
-        {!showLoader && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-          >
-            <BackgroundBeams />
-            <div
-              className={`top-[0px] z-10 h-11 w-full sticky bg-base-200  ${
-                atTop ? "hidden" : ""
-              }`}
-              aria-hidden={true}
-            ></div>
-            <main className="bg-base-200">
-              <div className="sticky top-[2rem] z-10">
-                <div className="mx-4">
-                  <Navbar />
-                </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 2.5,
+            delay: loadingAnimationSpeedMS / 1000,
+            ease: "easeInOut",
+            type: "spring",
+          }}
+          className={`${showLoader ? "hidden" : "block"}`}
+        >
+          <BackgroundBeams />
+
+          <div
+            className={`top-[0px] z-10 h-11 w-full sticky bg-base-200  ${
+              atTop ? "hidden" : ""
+            }`}
+            aria-hidden={true}
+          ></div>
+          <main className="bg-base-200">
+            <div className="sticky top-[2rem] z-10">
+              <div className="mx-4">
+                <Navbar />
               </div>
-              <Header />
-              <Projects />
-              <Experience />
-              <Skills />
-              <Footer />
-            </main>
-          </motion.div>
-        )}
+            </div>
+            <Header />
+            <Projects />
+            <Experience />
+            <Skills />
+            <Footer />
+          </main>
+        </motion.div>
       </AnimatePresence>
     </Fragment>
   );

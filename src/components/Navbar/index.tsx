@@ -3,18 +3,14 @@ import { motion } from "motion/react";
 export default function Navbar() {
   return (
     <motion.nav
-      className="navbar bg-base-100 z-10 rounded-xl  max-w-[1440px] m-auto shadow-xl"
+      className="navbar bg-base-100 z-10 rounded-xl  max-w-[1440px] m-auto shadow-xl hover:rounded-4xl hover:shadow-2xl transition-all duration-200"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ ease: "easeIn", duration: 0.5 }}
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost lg:hidden pr-0"
-          >
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -50,7 +46,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost md:text-xl">Tahzib Sunesara</a>
+        <a className="text-sm md:text-xl md:ml-2">Tahzib Sunesara</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

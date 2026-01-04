@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const { title, videoSrc, imageSrc, description, techStack, links } = project;
 
   return (
-    <div className="card bg-base-100 shadow-sm w-full xl:max-w-[45%] group transition-all duration-300  hover:shadow-[0_20px_80px_rgba(255,_255,_255,_0.2)] ">
+    <div className="card bg-base-100 shadow-sm w-full lg:max-w-[45%] group transition-all duration-300  hover:shadow-[0_20px_80px_rgba(255,_255,_255,_0.2)] ">
       <figure>
         {videoSrc ? (
           <video
